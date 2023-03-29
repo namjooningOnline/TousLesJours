@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tous les Jours</title>
+    <link rel="stylesheet" href="../day09/fontawesome-free-6.3.0-web/css/all.css">
+    <style>
+        @font-face {
+            font-family: "libreBold";
+            src: url(../font_folder/LibreCaslonText-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: "libreReg";
+            src: url(../font_folder/LibreCaslonText-Regular.ttf);
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            font-family: "libreReg";
+        }
+
+        #nav {
+            position: sticky;
+            background-color: white;
+            top: 0;
+            width: 100%;
+            height: 12%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        .findUs {
+            margin: 0 20px 0 50px;
+            color: #585858;
+        }
+
+        /* .fa-solid {
+            margin-right: 20px;
+        } */
+
+        #sprite {
+            display: inline-block;
+            position: absolute;
+            top: 28px;
+            right: 3px;
+            width: 30px;
+            height: 35px;
+            background-image: url(../day14/location_sprite.svg);
+            background-size: 80px;
+            background-position: left;
+        }
+
+        /* .location {
+            width: 45px;
+            object-fit: cover;
+        } */
+
+        #main {
+            background-image: url(../day14/TLJ_Background.webp);
+            background-size: cover;
+            background-position: bottom;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            /* This puts the text box in the vertical center */
+            justify-content: center;
+            /* This puts the text box in the horizontal center */
+            /* border: 1px solid red; */
+        }
+
+        #mainText {
+            /* border: 1px solid red; */
+            width: 550px;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: column wrap;
+            align-items: center;
+            /* This moves the button to the center*/
+            text-align: center;
+        }
+
+        .freshly {
+            font-size: 3em;
+            font-family: "libreBold";
+        }
+
+        .offering {
+            font-size: 1.25em;
+        }
+
+        .learn {
+            padding: 15px 25px;
+            text-decoration: none;
+            background: none;
+            border: 2px solid white;
+        }
+
+        #footer {
+            width: 100%;
+            height: 25%;
+            background-color: #0d4732;
+            /* border-top: 5px dotted #bd8357;
+            border-bottom: 5px dotted #bd8357; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #footerText {
+            width: fit-content;
+            height: 100px;
+            color: #bd8357;
+            font-size: 2em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .find {
+            color: #bd8357;
+            font-size: .5em;
+        }
+
+        #circleTop {
+            width: 100%;
+            height: 8px;
+            background-image: url(../day14/line_top.webp);
+            background-size: contain;
+            /* border: 1px solid red; */
+            margin: 0;
+            position: absolute;
+            bottom: 62px;
+        }
+
+        #circleBottom {
+            width: 100%;
+            height: 8px;
+            background-image: url(../day14/line_bottom.webp);
+            background-size: contain;
+            /* border: 1px solid red; */
+            margin: 0;
+            position: absolute;
+            bottom: -142px;
+        }
+
+        #whiteSpace {
+            width: 100%;
+            height: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <img class="logo" src="../day14/Tous_les_Jours--logo.webp" alt="Tous_les_Jours">
+        <span><i class="fa-solid fa-bars" style="color: #3a3a3a;"></i><span class="findUs"
+                style="margin-right: 50px;">FIND US</span>
+            <div id="sprite"></div>
+    </div>
+
+    <div id="main">
+        <div id="mainText">
+            <div class="freshly">Freshly Baked Everyday</div>
+            <div class="offering">Offering a variety of bakery goods passionately made from the finest ingredients</div>
+            <!-- <button>Learn More</button> -->
+            <a class="learn" href="https://www.tljus.com/our-story/"
+                style="color: white; font-family: sans-serif; font-size: 1.25em;">Learn More</a>
+            <img src="../day14/icon--arrow-down.svg" alt="V">
+        </div>
+    </div>
+
+    <div id="circleTop"></div>
+
+    <div id="footer">
+        <div id="footerText">
+            <div>Visit the nearest TOUS les JOURS</div>
+            <a class="find" href="https://www.tljus.com/locations/">Find Your Store</a>
+        </div>
+    </div>
+
+    <div id="circleBottom"></div>
+    <div id="whiteSpace"></div>
+</body>
+
+</html>
